@@ -1,0 +1,18 @@
+# StatsBomb pull output — regenerable, and large
+raw/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Power BI temp files
+*.pbix.tmp
+~$*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
