@@ -16,6 +16,28 @@ The question it is designed to answer is not *who had the most interceptions*. I
 
 ---
 
+## The correction, in one picture
+
+![Possession bias before and after correction](docs/img/possession-bias-comparison.png)
+
+Defensive percentile plotted against team possession, midfielders only. Same data, same filters, one toggle changed. On the left, a player at a 30%-possession club averages the 61st percentile and one at a 70%-possession club averages the 34th — a 27-point swing caused by nothing but her team. On the right, the slope is gone.
+
+---
+
+## The report
+
+Three pages in Power BI.
+
+**Scout** — pick a position, set seven weights, read the ranked list. Click any player to see her percentile profile across every metric.
+
+![Scout page](docs/img/scout.png)
+
+**Behind the Numbers** — the scatter above, with the reasoning beside it and a dynamic title that reports the current filters.
+
+**User Guide** — three worked examples, what the numbers mean, what the tool cannot tell you, and how it is built.
+
+---
+
 ## The data
 
 [StatsBomb Open Data](https://github.com/statsbomb/open-data), pulled with `statsbombpy`.
@@ -182,6 +204,6 @@ Alpha values are constants at the top of `build_model.py`.
 
 ## Built with
 
-Python (pandas, NumPy), `statsbombpy`, Power BI (star schema, DAX, Power Query, what-if parameters).
+Python (pandas, NumPy), `statsbombpy`, Power BI (star schema, DAX, Power Query, what-if parameters, custom theme, dynamic titles).
 
 Data © StatsBomb, used under the terms of their [open data licence](https://github.com/statsbomb/open-data/blob/master/LICENSE.pdf).
